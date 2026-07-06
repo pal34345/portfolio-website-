@@ -3,7 +3,7 @@
     "title": "AlphaEvolve: A Gemini-Powered Evolutionary Coding Agent",
     "description": "A 9-page technical standards report analysing Google DeepMind's AlphaEvolve framework.",
     "type": "pdf",
-    "file": "files/AlphaEvolve_Technical_Report.pdf",
+    "file": "files/AlphaEvolve_Technical_Report-v2.pdf",
     "date": "2026"
   },
   {
@@ -11,6 +11,34 @@
     "description": "An applied ethics curriculum bridging business ethics, digital/AI ethics, and psychoanalytic theory.",
     "type": "pptx",
     "file": "files/Lacanian_Ethics_Course.pptx",
+    "date": "2026"
+  },
+  {
+    "title": "NXAirS 550+ Professional User Manual",
+    "description": "Medium voltage air-insulated switchgear documentation — specifications, working methodology, maintenance schedule.",
+    "type": "pdf",
+    "file": "files/NXAirS_550_Professional_User_Manual_V2.pdf",
+    "date": "2026"
+  },
+  {
+    "title": "Netflix Content Discovery — Platform Case Study",
+    "description": "GenAI-assisted ideation exploring a narrative-discovery redesign of Netflix's content discovery interface.",
+    "type": "pptx",
+    "file": "files/Netflix_Platform_CaseStudy.pptx",
+    "date": "2026"
+  },
+  {
+    "title": "Algorithmic Bias Mitigation Training Model",
+    "description": "A five-module instructional curriculum on socio-technical alignment in AI-assisted software development.",
+    "type": "pdf",
+    "file": "files/Algorithmic_Bias_Mitigation_Training_Model.pdf",
+    "date": "2025"
+  },
+  {
+    "title": "Adaptive Workplace OS — Microsoft Build AI Hackathon 2026",
+    "description": "Conceptual AI-powered workplace onboarding and task management system, solo hackathon entry.",
+    "type": "pptx",
+    "file": "files/Adaptive_Workplace_OS_MicrosoftBuildAI2026-1.pptx",
     "date": "2026"
   },
   {
