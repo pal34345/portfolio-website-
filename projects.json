@@ -1,0 +1,23 @@
+[
+  {
+    "title": "AlphaEvolve: A Gemini-Powered Evolutionary Coding Agent",
+    "description": "A 9-page technical standards report analysing Google DeepMind's AlphaEvolve framework.",
+    "type": "pdf",
+    "file": "files/AlphaEvolve_Technical_Report.pdf",
+    "date": "2026"
+  },
+  {
+    "title": "Lacanian Ethics in the Digital Age",
+    "description": "An applied ethics curriculum bridging business ethics, digital/AI ethics, and psychoanalytic theory.",
+    "type": "pptx",
+    "file": "files/Lacanian_Ethics_Course.pptx",
+    "date": "2026"
+  },
+  {
+    "title": "Auto Pursuit — Luxury Car Digital Showroom",
+    "description": "AI-orchestrated interactive showroom concept, built via Figma AI, Gemini, and Claude.",
+    "type": "figma",
+    "file": "https://www.figma.com/embed?embed_host=share&url=PASTE_YOUR_FIGMA_SHARE_LINK_HERE",
+    "date": "2026"
+  }
+]

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio work by Pallab Behari Chaklanabis — Ex Catalogue Specialist pursuing roles in Technical Writing, Learning and Design.">
+<title>Portfolio Work — Pallab Behari Chaklanabis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink-bg:#14171C; --ink-bg-deep:#0F1114; --card:#EDE7D8; --card-shadow:#08090b;
+    --ink-text:#1D2019; --parchment-text:#EDE7D8; --parchment-dim:#b9b3a3;
+    --brass:#B98D3E; --brass-bright:#D3A94F; --teal:#4C7A73; --rule:#33383f;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--ink-bg);color:var(--parchment-text);font-family:'Source Serif 4',serif;}
+  .stamp{font-family:'Special Elite',monospace;letter-spacing:.03em;}
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  a{color:var(--brass-bright);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  header.drawer{padding:48px 24px 32px;text-align:center;background:linear-gradient(180deg,var(--ink-bg-deep),var(--ink-bg));border-bottom:1px solid var(--rule);}
+  header.drawer .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--brass);margin-bottom:14px;}
+  header.drawer h1{font-family:'Special Elite',monospace;font-size:clamp(28px,6vw,44px);margin:0 0 10px;}
+  header.drawer p.byline{color:var(--parchment-dim);font-size:15px;max-width:560px;margin:0 auto;line-height:1.5;}
+  header.drawer .tag{display:inline-block;margin-top:18px;padding:6px 14px;border:1px solid var(--brass);color:var(--brass-bright);font-size:12px;border-radius:2px;}
+  main{max-width:760px;margin:0 auto;padding:40px 20px 60px;}
+  .ledger-empty{text-align:center;padding:60px 20px;color:var(--parchment-dim);border:1px dashed var(--rule);border-radius:3px;}
+  .entry{position:relative;background:var(--card);color:var(--ink-text);border-radius:2px;margin-bottom:44px;box-shadow:0 10px 0 -4px var(--card-shadow),0 14px 24px rgba(0,0,0,.35);}
+  .entry .perforation{height:10px;background-image:radial-gradient(circle,var(--ink-bg) 2.5px,transparent 2.6px);background-size:16px 10px;background-position:4px center;border-radius:2px 2px 0 0;}
+  .entry-inner{padding:22px 24px 18px;}
+  .entry .index-no{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--teal);letter-spacing:.06em;margin-bottom:6px;display:block;}
+  .entry h3{font-family:'Special Elite',monospace;font-size:19px;margin:0 0 8px;}
+  .entry .meta-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;}
+  .entry .meta-row span{font-family:'IBM Plex Mono',monospace;font-size:11px;color:#55524a;border:1px solid #c9c2ac;padding:2px 8px;border-radius:10px;}
+  .entry p.desc{font-size:14.5px;line-height:1.55;color:#2b2c26;margin:0 0 16px;}
+  .viewer{margin:14px 0;border-radius:2px;overflow:hidden;border:1px solid #d8d2bc;}
+  .viewer img{display:block;max-width:100%;}
+  .viewer iframe{width:100%;height:480px;border:none;display:block;background:#fff;}
+  .viewer .fallback{padding:18px;background:#fbf9f2;font-size:13.5px;}
+  footer{text-align:center;padding:20px;color:var(--parchment-dim);font-family:'IBM Plex Mono',monospace;font-size:11.5px;border-top:1px solid var(--rule);}
+  .comments-wrap{max-width:760px;margin:0 auto 60px;padding:0 20px;}
+  .comments-wrap h4{font-family:'IBM Plex Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--parchment-dim);margin-bottom:12px;}
+</style>
+</head>
+<body>
+
+<header class="drawer">
+  <div class="eyebrow">Catalogue — Personal Archive</div>
+  <h1 class="stamp">Portfolio Work</h1>
+  <p class="byline">Created by <strong>Pallab Behari Chaklanabis</strong><br>
+  Ex Catalogue Specialist, pursuing roles in Technical Writing, Learning &amp; Design.</p>
+  <div class="tag mono">OPEN FOR VIEWING &amp; COMMENTS</div>
+</header>
+
+<main>
+  <div id="ledger">Loading catalogue…</div>
+</main>
+
+<div class="comments-wrap">
+  <h4>Remarks</h4>
+  <!-- Giscus comments — replace the data- attributes below with your own after setup (see README) -->
+  <script src="https://giscus.app/client.js"
+    data-repo="YOUR_GITHUB_USERNAME/YOUR_REPO_NAME"
+    data-repo-id="PASTE_FROM_GISCUS_SETUP"
+    data-category="General"
+    data-category-id="PASTE_FROM_GISCUS_SETUP"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="dark"
+    data-lang="en"
+    crossorigin="anonymous"
+    async>
+  </script>
+</div>
+
+<footer>Real files, real hosting — this page reads projects.json and renders each entry live.</footer>
+
+<script>
+function escapeHtml(s){return (s||"").replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+
+function renderViewer(p){
+  const t = (p.type||"").toLowerCase();
+  if (t === "image") return `<div class="viewer"><img src="${p.file}" alt="${escapeHtml(p.title)}"></div>`;
+  if (t === "pdf") return `<div class="viewer"><iframe src="${p.file}"></iframe></div>`;
+  if (t === "pptx" || t === "docx" || t === "xlsx") {
+    const viewerUrl = "https://view.officeapps.live.com/op/embed.aspx?src=" + encodeURIComponent(p.file);
+    return `<div class="viewer"><iframe src="${viewerUrl}"></iframe></div>`;
+  }
+  if (t === "figma") return `<div class="viewer"><iframe src="${p.file}" allowfullscreen></iframe></div>`;
+  if (t === "link") return `<div class="viewer"><div class="fallback"><a href="${p.file}" target="_blank">Open project →</a></div></div>`;
+  return `<div class="viewer"><div class="fallback"><a href="${p.file}" download>Download file →</a></div></div>`;
+}
+
+fetch('projects.json')
+  .then(r => r.json())
+  .then(projects => {
+    const el = document.getElementById('ledger');
+    if (!projects.length) {
+      el.innerHTML = `<div class="ledger-empty"><span class="stamp">DRAWER EMPTY</span>No entries filed yet — add one in projects.json.</div>`;
+      return;
+    }
+    el.innerHTML = projects.map((p, i) => {
+      const no = String(i+1).padStart(3,'0');
+      return `
+        <article class="entry">
+          <div class="perforation"></div>
+          <div class="entry-inner">
+            <span class="index-no">No. ${no}</span>
+            <h3>${escapeHtml(p.title)}</h3>
+            <div class="meta-row"><span>${escapeHtml(p.type||'file')}</span>${p.date ? `<span>${escapeHtml(p.date)}</span>` : ""}</div>
+            ${p.description ? `<p class="desc">${escapeHtml(p.description)}</p>` : ""}
+            ${renderViewer(p)}
+          </div>
+        </article>`;
+    }).join("");
+  })
+  .catch(() => {
+    document.getElementById('ledger').innerHTML = `<div class="ledger-empty">Couldn't load projects.json — check the file exists in the same folder as index.html.</div>`;
+  });
+</script>
+
+</body>
+</html>
